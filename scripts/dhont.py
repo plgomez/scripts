@@ -2,6 +2,8 @@
 script que calcula el reparto de bancas por sitema d'hont
 '"""
 
+import string
+
 A = 5000
 B = 3000
 C = 1400
@@ -9,7 +11,8 @@ C = 1400
 ELECTORES = 5
 
 votos = [A, B, C]
-listas = ["A", "B", "C"]
+listas = list(string.ascii_uppercase)
+
 
 #inicializamos la lista de elegios y cociente en 0
 cociente = []
